@@ -14,11 +14,14 @@
     <div class="mobile-menu" id="mobileMenu">
       <ul>
         <li><a href="#home" class="mobile-link">Home</a></li>
-        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#colors-section" class="mobile-link">Services</a></li>
         <li><a href="#quote" class="mobile-link">Get Quote</a></li>
         <li><a href="#contact" class="mobile-link">Contact</a></li>
       </ul>
-      <a href="#quote" class="cta-button mobile-link">Request Quote</a>
+      <a href="#quote" class="cta-button mobile-link"
+        >Get Your Free Coating Estimate</a
+      >
     </div>
 
     <!-- Navbar -->
@@ -36,71 +39,102 @@
       </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#colors-section">Services</a></li>
         <li><a href="#quote">Get Quote</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#quote" class="cta-button">Request Quote</a>
+      <a href="#quote" class="cta-button">Get Your Free Coating Estimate</a>
       <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
       <div class="hero-content">
-        <h1>
+        <!-- <h1>
           Transform Your Florida Home with
           <span class="highlight">Premium Windows</span>
-        </h1>
+        </h1> -->
+        <h1>ONE & DONE</h1>
         <p>
-          Expert installation of windows, doors, and openings designed for the
-          coastal lifestyle.
+          Superior protective coating technology engineered for Florida’s
+          climate — reducing heat, boosting durability, and enhancing exterior
+          appeal
         </p>
+        <ul>
+          <li>Reflects heat and keeps exterior surfaces cooler.</li>
+          <li>Built to handle Florida storms and heavy rain.</li>
+          <li>Mold-resistant and moisture-resistant.</li>
+          <li>Long-lasting protective coating — no frequent repainting.</li>
+          <li>Saves money long-term vs. traditional paint.</li>
+        </ul>
         <div class="hero-buttons">
           <button
             class="btn-primary"
             onclick="document.getElementById('quote').scrollIntoView({behavior: 'smooth'})"
           >
-            Get Free Quote
+            Get Your Free Coating Estimate
           </button>
           <button
             class="btn-secondary"
-            onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
+            onclick="document.getElementById('colors-section').scrollIntoView({behavior: 'smooth'})"
           >
             Our Services
           </button>
         </div>
       </div>
-      <div class="hero-image">
+      <div class="quote-container">
+        <h2>Get Your Free Quote</h2>
+        <p class="subtitle">
+          Tell us about your project and we'll provide a detailed estimate
+        </p>
+        <form id="quoteForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="postal-code">Postal code *</label>
+              <input type="text" id="postal-code" name="postal-code" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us about your project, timeline, and any specific requirements..."
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Request Free Quote</button>
+        </form>
+      </div>
+      <!-- <div class="hero-image">
         <img
           src="./assets/Dark-removebg-preview.png"
           alt="Window Installation"
         />
-      </div>
+      </div> -->
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
       <div class="section-header">
         <h2>Our Premium Services</h2>
         <p>Quality craftsmanship for every opening in your home</p>
       </div>
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">🪟</div>
-          <h3>Window Installation</h3>
-          <p>
-            Hurricane-resistant windows designed for Florida's coastal climate.
-            Energy-efficient and built to last.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🚪</div>
-          <h3>Door Solutions</h3>
-          <p>
-            From entry doors to sliding glass doors, we provide secure and
-            stylish options for every home.
-          </p>
-        </div>
         <a
           href="https://coollifepalette.lifetimepluscoatings.com/#/colors/"
           target="_blank"
@@ -113,29 +147,308 @@
             storms while looking beautiful.
           </p>
         </a>
-        <div class="service-card">
-          <div class="service-icon">🔧</div>
-          <h3>Custom Openings</h3>
+      </div>
+    </section> -->
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-header">
+          <h2>Built for Florida. Engineered to Last.</h2>
           <p>
-            Specialized solutions for skylights, French doors, and unique
-            architectural features.
+            Florida heat, humidity, storms, and sun exposure destroy traditional
+            paint — Cool Life coating solves that permanently.
           </p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">⚡</div>
-          <h3>Energy Solutions</h3>
-          <p>
-            Upgrade to energy-efficient windows and doors that reduce costs and
-            improve comfort.
-          </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>More Than Paint — It's Exterior Protection</h3>
+            <p>Cool Life forms a long-lasting coating that:</p>
+            <ul>
+              <li>Keeps surfaces cooler</li>
+              <li>Shields against storms and moisture</li>
+              <li>Resists mold</li>
+              <li>Maintains a premium finish for years</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3>Designed for Florida Weather</h3>
+            <p>Unlike ordinary paint, Cool Life is built to handle:</p>
+            <ul>
+              <li>Heavy rainfall and storms</li>
+              <li>Intense UV exposure</li>
+              <li>Humidity and moisture</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3>Smarter Exterior Investment</h3>
+            <p>With Cool Life you:</p>
+            <ul>
+              <li>Avoid constant repainting</li>
+              <li>Reduce exterior maintenance</li>
+              <li>Save money long-term</li>
+            </ul>
+            <p class="tagline">You apply it once — and enjoy it for years.</p>
+          </div>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🛡️</div>
-          <h3>Impact Protection</h3>
-          <p>
-            Storm-rated windows and doors that meet Florida building codes and
-            protect your investment.
-          </p>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose-section">
+      <div class="why-choose-container">
+        <div class="section-header">
+          <h2>Why Choose Cool Life Coating</h2>
+          <p>Engineered for Florida Conditions</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">🌡️</div>
+            <h3>Cooler Surfaces</h3>
+            <p>Reflects heat for a noticeably cooler exterior.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">🛡️</div>
+            <h3>Durable & Weather Resistant</h3>
+            <p>Holds strong even during harsh Florida storms.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">🦠</div>
+            <h3>Mold & Moisture Defense</h3>
+            <p>Creates a protective barrier that helps prevent mold.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">💰</div>
+            <h3>Saves Money Long-Term</h3>
+            <p>Minimal repainting and maintenance required.</p>
+          </div>
+        </div>
+
+        <div class="resistance-box">
+          <h4>Traditional paint breaks down. Cool Life is built to resist:</h4>
+          <div class="resistance-tags">
+            <span>Heat</span>
+            <span>Storms</span>
+            <span>Humidity</span>
+            <span>Moisture</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+      <div class="comparison-container">
+        <h2>Cool Life vs Traditional Paint</h2>
+        <div class="comparison-grid">
+          <div class="comparison-column traditional">
+            <h3>Traditional Paint</h3>
+            <ul>
+              <li class="negative">Absorbs heat</li>
+              <li class="negative">Fades quickly</li>
+              <li class="negative">Peels and cracks</li>
+              <li class="negative">Requires frequent repainting</li>
+              <li class="negative">Prone to mold</li>
+            </ul>
+          </div>
+
+          <div class="vs-divider">VS</div>
+
+          <div class="comparison-column coollife">
+            <h3>Cool Life Coating</h3>
+            <ul>
+              <li class="positive">Reflects heat</li>
+              <li class="positive">Holds up in storms</li>
+              <li class="positive">Resists mold</li>
+              <li class="positive">Long-lasting durability</li>
+              <li class="positive">Saves money long-term</li>
+            </ul>
+          </div>
+        </div>
+        <p class="comparison-tagline">
+          Cool Life coating outperforms traditional paint in every category.
+        </p>
+      </div>
+    </section>
+
+    <!-- Colors Section -->
+    <section class="colors-section" id="colors-section">
+      <div class="colors-container">
+        <div class="section-header">
+          <h2>Color & Finish Options</h2>
+          <p>Premium Colors Built to Last</p>
+        </div>
+
+        <div class="colors-grid">
+          <div class="color-card">
+            <div class="color-icon">🎨</div>
+            <h3>Premium Colors Built to Last</h3>
+            <p>
+              Choose from modern, Florida-inspired colors that stay vibrant.
+            </p>
+          </div>
+
+          <div class="color-card">
+            <div class="color-icon">☀️</div>
+            <h3>UV-Stable Finish</h3>
+            <p>Holds color and finish even under harsh sun.</p>
+          </div>
+
+          <div class="color-card">
+            <div class="color-icon">✨</div>
+            <h3>Premium Visual Upgrade</h3>
+            <p>
+              Delivers a smooth, modern look on residential and commercial
+              properties.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <a href="https://coollifepalette.lifetimepluscoatings.com/#/colors/" target="_blank" class="cta-button">Choose from Color palette</a>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+      <div class="benefits-header">
+        <h2>Benefits of Cool Life Coating</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefits-card">
+          <h3>Reflects heat and keeps surfaces cooler</h3>
+      </div>
+        <div class="benefits-card">
+          <h3>Storm and weather resistant</h3>
+      </div>
+        <div class="benefits-card">
+          <h3>Mold and moisture resistant</h3>
+      </div>
+        <div class="benefits-card">
+          <h3>Requires far less repainting</h3>
+      </div>
+        <div class="benefits-card">
+          <h3>Saves long-term maintenance costs</h3>
+      </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section class="applications-section">
+      <div class="applications-container">
+        <h2>Residential & Commercial Applications</h2>
+
+        <div class="applications-grid">
+          <div class="application-card residential">
+            <h3>Residential</h3>
+            <div class="app-content">
+              <div class="app-subsection">
+                <h4>Perfect for:</h4>
+                <ul>
+                  <li>Single-family homes</li>
+                  <li>Villas</li>
+                  <li>Multi-unit buildings</li>
+                </ul>
+              </div>
+              <div class="app-subsection">
+                <h4>Benefits:</h4>
+                <ul>
+                  <li>Cooler exterior</li>
+                  <li>Cleaner appearance</li>
+                  <li>Reduced future repainting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="application-card commercial">
+            <h3>Commercial</h3>
+            <div class="app-content">
+              <div class="app-subsection">
+                <h4>Ideal for:</h4>
+                <ul>
+                  <li>Storefronts</li>
+                  <li>Retail plazas</li>
+                  <li>Office buildings</li>
+                  <li>Multi-tenant properties</li>
+                </ul>
+              </div>
+              <div class="app-subsection">
+                <h4>Benefits:</h4>
+                <ul>
+                  <li>Premium professional look</li>
+                  <li>Durable in harsh weather</li>
+                  <li>Lower long-term maintenance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before & After Section -->
+    <section class="before-after-section">
+      <div class="before-after-container">
+        <h2>Before & After</h2>
+        <p class="subtitle">See the Difference</p>
+
+        <div class="before-after-placeholder">
+          <p>Images coming soon</p>
+        </div>
+
+        <div class="benefits-list">
+          <ul>
+            <li>Stronger durability</li>
+            <li>Premium appearance</li>
+            <li>Weather resistance improvement</li>
+            <li>Cleaner, updated surfaces</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="faq-container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>How long does Cool Life coating last?</h3>
+            <p>Cool Life provides years of durable exterior protection.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Does it help reduce heat?</h3>
+            <p>Yes — it reflects heat to keep exterior surfaces cooler.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Is it mold resistant?</h3>
+            <p>Yes — it helps prevent moisture and mold formation.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Will I need frequent repainting?</h3>
+            <p>No — Cool Life significantly reduces repainting needs.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can it be installed on commercial buildings?</h3>
+            <p>
+              Absolutely — Cool Life is ideal for both residential and
+              commercial exterior applications.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -229,88 +542,6 @@
         &copy; 2024 Cool Life of Florida. All rights reserved.
       </p>
     </footer>
-
-    <script>
-         // Mobile menu functionality
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const overlay = document.getElementById('overlay');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-
-    function toggleMobileMenu() {
-        mobileMenu.classList.toggle('active');
-        overlay.classList.toggle('active');
-        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-    }
-
-    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
-    overlay.addEventListener('click', toggleMobileMenu);
-
-    // Close mobile menu when clicking a link
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', toggleMobileMenu);
-    });
-
-      // Navbar scroll effect
-      window.addEventListener("scroll", function () {
-        const navbar = document.getElementById("navbar");
-        if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
-
-      // Scroll animations
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px",
-      };
-
-      const observer = new IntersectionObserver(function (entries) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      }, observerOptions);
-
-      // Observe all animated elements
-      document
-        .querySelectorAll(".section-header, .service-card, .quote-container")
-        .forEach((el) => {
-          observer.observe(el);
-        });
-
-      // Stagger service card animations
-      document.querySelectorAll(".service-card").forEach((card, index) => {
-        card.style.transitionDelay = `${index * 0.1}s`;
-      });
-
-      // Form submission
-      document
-        .getElementById("quoteForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert(
-            "Thank you for your quote request! We will contact you within 24 hours."
-          );
-          this.reset();
-        });
-
-      // Smooth scroll for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
