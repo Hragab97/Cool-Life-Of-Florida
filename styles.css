@@ -1151,6 +1151,33 @@ body {
     text-align: center;
   }
 
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .vs-divider {
+    order: 2;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .comparison-column.traditional {
+    order: 1;
+  }
+
+  .comparison-column.coollife {
+    order: 3;
+  }
+
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-column {
+    padding: 2rem;
+  }
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
@@ -1175,5 +1202,18 @@ body {
 
   .quote-container {
     padding: 2rem 1.5rem;
+  }
+  
+  .comparison-column {
+    padding: 1.5rem;
+  }
+
+  .comparison-column h3 {
+    font-size: 1.3rem;
+  }
+
+  .comparison-column ul li {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem 0.5rem 1.8rem;
   }
 }
