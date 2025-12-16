@@ -67,6 +67,14 @@ document.getElementById("quoteForm").addEventListener("submit", function (e) {
   this.reset();
 });
 
+document.getElementById("quickQuoteForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert(
+    "Thank you for your quote request! We will contact you within 24 hours."
+  );
+  this.reset();
+});
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -80,3 +88,21 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+// Form Callrail integration
+
+var form = document.querySelector('#quoteForm');
+form.addEventListener(
+ 'submit',
+ function() {
+   CallTrk.captureForm('#quoteForm');
+ }
+);
+
+var form = document.querySelector('#quickQuoteForm');
+form.addEventListener(
+ 'submit',
+ function() {
+   CallTrk.captureForm('#quickQuoteForm');
+ }
+);

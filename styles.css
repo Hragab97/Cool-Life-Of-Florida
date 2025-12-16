@@ -103,6 +103,12 @@ body {
   box-shadow: 0 6px 25px rgba(244, 166, 35, 0.5);
 }
 
+.navbar h4 a.phone-link {
+  color: #faf6f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* Hero Section */
 .hero {
   margin-top: 80px;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cool Life of Florida - Premium Window & Openings Solutions</title>
+    <title>Cool Life of Florida</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -44,6 +44,8 @@
         <li><a href="#quote">Get Quote</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <h4 style="color: white;"> | <a href="tel:551-262-8464" class="phone-link">(551) 262-8464</a>
+</h4>
       <a href="#quote" class="cta-button">Get Your Free Coating Estimate</a>
       <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
     </nav>
@@ -84,7 +86,7 @@
         <p class="subtitle">
           Tell us about your project and we'll provide a detailed estimate
         </p>
-        <form id="quoteForm">
+        <form id="quickQuoteForm" action="/request-quote" method="post">
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">First Name *</label>
@@ -456,7 +458,7 @@
         <p class="subtitle">
           Tell us about your project and we'll provide a detailed estimate
         </p>
-        <form id="quoteForm">
+        <form id="quoteForm" action="/request-quote" method="post">
           <div class="form-row">
             <div class="form-group">
               <label for="firstName">First Name *</label>
@@ -501,12 +503,7 @@
             <label for="service">Service Type *</label>
             <select id="service" name="service" required>
               <option value="">Select a service...</option>
-              <option value="windows">Window Installation</option>
-              <option value="doors">Door Solutions</option>
               <option value="coating">Exterior Coating</option>
-              <option value="custom">Custom Openings</option>
-              <option value="energy">Energy Solutions</option>
-              <option value="impact">Impact Protection</option>
               <option value="other">Other</option>
             </select>
           </div>
@@ -527,17 +524,19 @@
     <footer class="footer" id="contact">
       <p><strong>Cool Life of Florida</strong></p>
       <p>Superior protective coating technology engineered for Florida’s climate</p>
-      <p>
-        Email:
-        <a href="mailto:info@coollifeofflorida.com"
-          >info@coollifeofflorida.com</a
-        >
-        | Phone: 551-262-8464
-      </p>
-      <p style="margin-top: 2rem; color: #2cb0a4">
-        &copy; 2025 Cool Life of Florida. All rights reserved.
-      </p>
+      <div class="footer-contact">
+        <p>Email: <a href="mailto:info@coollifeofflorida.com">info@coollifeofflorida.com</a></p>
+        <p>Phone: <a href="tel:551-262-8464">551-COATING (551-262-8464)</a></p>
+    </div>
+    
+    <div class="footer-areas">
+        <p><strong>Areas We Serve:</strong></p>
+        <p class="service-areas">Pasco • Pinellas • Hillsborough • Manatee • Sarasota</p>
+    </div>
+    
+    <p style="margin-top: 2rem; color: #2CB0A4;">&copy; 2025 Cool Life of Florida. All rights reserved.</p>
     </footer>
     <script src="./script.js"></script>
+    <script type="text/javascript" src="//cdn.callrail.com/companies/791768167/aab7d7817c9b0b759062/12/swap.js"></script>
   </body>
 </html>
