@@ -1383,6 +1383,7 @@ body {
 }
 
 .mobile-menu ul li {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
