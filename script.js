@@ -106,3 +106,62 @@ form.addEventListener(
    CallTrk.captureForm('#quickQuoteForm');
  }
 );
+
+// Before/After Image Slider
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const indicators = document.querySelectorAll('.indicator');
+
+    function showSlide(index) {
+        // Wrap around if out of bounds
+        if (index >= slides.length) {
+            currentSlide = 0;
+        } else if (index < 0) {
+            currentSlide = slides.length - 1;
+        } else {
+            currentSlide = index;
+        }
+
+        // Update slides
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === currentSlide) {
+                slide.classList.add('active');
+            }
+        });
+
+        // Update indicators
+        indicators.forEach((indicator, i) => {
+            indicator.classList.remove('active');
+            if (i === currentSlide) {
+                indicator.classList.add('active');
+            }
+        });
+    }
+
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+    }
+
+    function goToSlide(index) {
+        showSlide(index);
+    }
+
+    // Auto-advance slider every 5 seconds (optional - remove if you don't want auto-play)
+    let autoSlide = setInterval(() => {
+        changeSlide(1);
+    }, 5000);
+
+    // Pause auto-slide when hovering over slider
+    const sliderContainer = document.querySelector('.slider-container');
+    if (sliderContainer) {
+        sliderContainer.addEventListener('mouseenter', () => {
+            clearInterval(autoSlide);
+        });
+
+        sliderContainer.addEventListener('mouseleave', () => {
+            autoSlide = setInterval(() => {
+                changeSlide(1);
+            }, 5000);
+        });
+    }
