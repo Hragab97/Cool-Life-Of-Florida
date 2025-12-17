@@ -30,15 +30,8 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
 .logo-icon {
-  width: 50px;
-  height: 50px;
+  width: 150px;
   transition: transform 0.3s ease;
 }
 
