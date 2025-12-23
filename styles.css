@@ -865,10 +865,20 @@ body {
 }
 
 .slider-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  min-height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    min-height: 400px;
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    touch-action: pan-y pinch-zoom;
+}
+
+.slider-wrapper:active {
+    cursor: grabbing;
 }
 
 .slide {
@@ -879,6 +889,7 @@ body {
 .slide.active {
   display: block;
 }
+
 
 @keyframes fadeIn {
   from {
