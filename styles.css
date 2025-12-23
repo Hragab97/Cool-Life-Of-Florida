@@ -958,30 +958,89 @@ body {
 .slider-indicators {
   display: flex;
   justify-content: center;
-  gap: 0.75rem;
+  align-items: center;
+  gap: 0.5rem;
   margin: 2rem 0 3rem;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .indicator {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #d0d0d0;
   cursor: pointer;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  flex-shrink: 0;
 }
 
 .indicator:hover {
   background: #1a7085;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .indicator.active {
   background: #2cb0a4;
-  width: 40px;
-  border-radius: 7px;
+  width: 30px;
+  border-radius: 6px;
   border-color: #2cb0a4;
+}
+
+/* Responsive adjustments for indicators */
+@media (max-width: 968px) {
+  .slider-indicators {
+    gap: 0.4rem;
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+
+  .indicator.active {
+    width: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .slider-indicators {
+    gap: 0.35rem;
+    padding: 0 0.5rem;
+    margin: 1rem 0 2rem;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
+
+  .indicator.active {
+    width: 20px;
+    border-radius: 4px;
+  }
+}
+
+/* Alternative: Hide indicators on very small screens with many images */
+@media (max-width: 480px) {
+  .slider-indicators.many-slides {
+    display: none;
+  }
+
+  /* Show slide counter instead */
+  .slide-counter {
+    display: block;
+    text-align: center;
+    color: #0b3a4a;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 1rem 0 2rem;
+  }
 }
 
 /* Benefits List */
